@@ -1,0 +1,37 @@
+.text-muted {
+  color: $text-muted-color;
+}
+
+.text-pre-muted {
+  color: $text-pre-muted-color;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg {
+  font-size: 1.375em;
+  line-height: 2.33rem;
+}
+
+.text-md {
+  font-size: 1.125em;
+  line-height: 1.5;
+}
+
+.text-sm {
+  font-size: .875em;
+}
+
+.text-semibold {
+  font-weight: $text-semibold-weight;
+}

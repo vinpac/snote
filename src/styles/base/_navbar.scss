@@ -1,0 +1,84 @@
+.navbar {
+  @include clearfix();
+  position: relative;
+  padding: .6rem 1rem;
+}
+
+.navbar-brand {
+  float: left;
+  font-size: 1.25rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  margin-right: .5rem;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  > a {
+    display: inline-block;
+  }
+}
+
+.nav-link,
+.nav-item {
+  display: inline-block;
+}
+
+.nav-inline {
+  > a,
+  .nav-item,
+  .nav-link {
+    margin-right: .8rem;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.nav-vertical {
+  > li {
+    display: block;
+    margin-bottom: .7rem;
+  }
+
+  .nav-link {
+    display: block;
+  }
+}
+
+.navbar-nav {
+  > li,
+  .nav-item {
+    margin-left: .4rem;
+    float: left;
+    display: inline-block;
+  }
+
+  .nav-link {
+    display: block;
+    padding: .450rem .425rem;
+  }
+}
+
+.navbar-default {
+  @include make-navbar(null, $text-color);
+}
+
+.navbar-btn {
+  padding: .5rem 1rem;
+}

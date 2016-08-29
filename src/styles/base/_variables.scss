@@ -1,0 +1,99 @@
+// Base variables
+// Variables with !default are overwritten by the app's variables
+
+// Enable flex
+$enable-flex: true;
+
+// Colors
+$color-primary: #007ee5 !default;
+$color-primary-dark: #026DC5 !default;
+$color-accent: #E91E63 !default;
+
+// Variables
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// Grid containers
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1200px
+) !default;
+
+// Font
+$font-family-base: Arial, Helvetica, sans-serif !default;
+$line-height-base: 1.5 !default;
+$font-size-root: 16px !default;
+$font-size-base: 16px !default;
+$text-color: #333 !default;
+$body-bg: #FFF !default;
+
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
+$headings-margin-bottom: .5rem !default;
+$headings-line-height: 1.15 !default;
+$headings-font-weight: 500 !default;
+$headings-color: inherit !default;
+
+// Grid
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+// Buttons
+$btn-padding-y: .5rem !default;
+$btn-padding-x: 1rem !default;
+$btn-line-height: 1.25 !default;
+$btn-border-radius: 3px !default;
+$btn-font-weight: 600 !default;
+
+$btn-default-color: #9DA6AF;
+$btn-success-color: #60BB4D;
+
+// Forms
+$input-padding-x: .75rem !default;
+$input-padding-y: .625rem !default;
+$input-line-height: 1.2 !default;
+
+$input-lg-font-size: 20px !default;
+$input-lg-padding-y: .67rem !default;
+$input-lg-padding-x: .8rem !default;
+
+// Dropdown
+$dropdown-item-padding-x: 1.4rem;
+$dropdown-item-padding-y: .38rem;
+$dropdown-border-radius: 4px;
+
+// Modal
+$modal-backdrop-bg: rgba(#567, .8) !default;
+$modal-padding-x: 1.25rem !default;
+$modal-padding-y: 1rem !default;
+
+// link
+$link-color: #007ee5 !default;
+$link-decoration: none !default;
+$link-hover-color: $link-color !default;
+$link-hover-decoration: underline !default;
+
+// Utilities
+$util-margin-horizontal: 1rem !default;
+$util-margin-vertical: 2rem !default;
+
+$text-pre-muted-color: #666 !default;
+$text-muted-color: #999 !default;
+
+$hr-color: rgba(0,0,0,.1);
+$hr-muted-color: rgba(0,0,0,.05);
+
+$text-semibold-weight: 600;

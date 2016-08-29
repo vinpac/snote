@@ -1,0 +1,87 @@
+.editor-add {
+  $size: 18px;
+  $color: #666;
+
+  position: absolute;
+  visibility: hidden;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+
+  .btn-circle {
+    border: 1px solid $color;
+    cursor: pointer;
+    background: none;
+    position: relative;
+    margin-right: 8px;
+    color: $color;
+    transition: .05s ease-in;
+    visibility: hidden;
+    transform: scale(.6);
+    z-index: 1;
+
+    &:hover {
+      color: $color-accent;
+      border-color: $color-accent;
+    }
+  }
+
+  .editor-add-btn {
+    $thickness: 3px;
+    margin-right: 16px;
+    transition: transform .1s ease-in-out;
+
+    &:hover {
+      &:after,
+      &:before {
+        background: $color-accent;
+      }
+    }
+
+    &:after,
+    &:before {
+      content: '';
+      display: block;
+      background: $color;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    &:after {
+      width: $thickness;
+      height: $size;
+    }
+
+    &:before {
+      width: $size;
+      height: $thickness;
+    }
+  }
+
+  &.visible {
+    visibility: visible;
+    .editor-add-btn {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &.open {
+    width: auto;
+
+    .btn-circle {
+      visibility: visible;
+      transform: scale(1);
+      z-index: 3;
+    }
+
+    .editor-add-btn {
+      transform: rotate(135deg);
+    }
+  }
+}

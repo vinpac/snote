@@ -1,0 +1,63 @@
+.editor-controls {
+  position: absolute;
+  background: #333;
+  border-radius: 6px;
+  display: flex;
+  transition: margin .2s ease-in-out;
+  margin-top: 10px;
+  visibility: hidden;
+
+  &.visible {
+    margin-top: 0;
+    visibility: visible;
+  }
+
+  &.still-visible {
+    transition: top .1s ease-in-out, left .1s ease-in-out;
+  }
+
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    border-style: solid;
+    border-width: 9px 9px 0;
+    border-color: #333 rgba(#FFF, 0);
+    bottom: -8px;
+  }
+
+  .btn {
+    color: rgba(#FFF, .8);
+    padding: .7rem .4rem;
+    min-width: 42px;
+    text-align: center;
+
+    &:first-child {
+      padding-left: 1.1rem;
+    }
+
+    &:last-child {
+      padding-right: 1.1rem;
+    }
+
+    &:hover {
+      color: #FFF;
+    }
+
+    &.active {
+      color: #6CE85C;
+    }
+  }
+
+  .editor-controls-divisor {
+    display: block;
+    width: 1px;
+    height: 1.8rem;
+    margin: auto 0;
+    background: rgba(#FFF, .1);
+  }
+}

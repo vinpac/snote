@@ -1,0 +1,34 @@
+.sidebar {
+  background: #2F3235;
+  width: 220px;
+  height: 100%;
+  display: none;
+
+  .nav-vertical {
+    margin-top: 40px;
+
+    .nav-link {
+      color: rgba(#FFF, .5);
+      padding: .38rem 1.4rem;
+
+      > .fa {
+        margin-right: .5rem;
+        color: rgba(#FFF, .6);
+      }
+
+      &:hover {
+        background: rgba(#FFF,.03)
+      }
+
+      &.active {
+        background: rgba(#FFF,.05);
+        color: #FFF;
+        font-weight: 600;
+
+        > .fa {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.note-editor {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Georgia', serif;
+  padding: 3rem 0 5rem 0;
+
+  .note-block-text {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  .note-block-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
